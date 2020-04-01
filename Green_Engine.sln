@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Green_Engine", "Green_Engine\Green_Engine.csproj", "{E8650362-CE16-4D4B-AC68-A843BA4764B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox\Sandbox.csproj", "{0B67C46B-9761-4221-925E-A5FACD1BBE17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8650362-CE16-4D4B-AC68-A843BA4764B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8650362-CE16-4D4B-AC68-A843BA4764B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8650362-CE16-4D4B-AC68-A843BA4764B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8650362-CE16-4D4B-AC68-A843BA4764B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B67C46B-9761-4221-925E-A5FACD1BBE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B67C46B-9761-4221-925E-A5FACD1BBE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B67C46B-9761-4221-925E-A5FACD1BBE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B67C46B-9761-4221-925E-A5FACD1BBE17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9500D3BD-36E2-4B62-9B2A-6C806E531602}
+	EndGlobalSection
+EndGlobal
