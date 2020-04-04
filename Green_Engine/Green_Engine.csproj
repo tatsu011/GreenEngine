@@ -40,12 +40,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="GLFW.NET, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\glfw-net.3.3.1\lib\netstandard2.0\GLFW.NET.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Green\Event.cs" />
     <Compile Include="Green_Application.cs" />
     <Compile Include="Green\Logger.cs" />
   </ItemGroup>
