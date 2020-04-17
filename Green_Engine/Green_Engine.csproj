@@ -47,5 +47,11 @@
     <Compile Include="Green_Application.cs" />
     <Compile Include="Green\Logger.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vendor\Raylibcs\Raylib-cs\Raylib-cs.csproj">
+      <Project>{c6fc6811-6739-46aa-a83a-3e97ccce4092}</Project>
+      <Name>Raylib-cs</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
