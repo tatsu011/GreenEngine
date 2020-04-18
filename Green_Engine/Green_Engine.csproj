@@ -53,5 +53,10 @@
       <Name>Raylib-cs</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="raylib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
