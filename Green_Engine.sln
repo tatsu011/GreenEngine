@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Green_Engine", "Green_Engin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox\Sandbox.csproj", "{0B67C46B-9761-4221-925E-A5FACD1BBE17}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Raylib-cs", "vendor\Raylibcs\Raylib-cs\Raylib-cs.csproj", "{C6FC6811-6739-46AA-A83A-3E97CCCE4092}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F8AB0765-9401-4936-AC47-1FA9031DF1D3}"
 EndProject
 Global
@@ -35,12 +33,6 @@ Global
 		{0B67C46B-9761-4221-925E-A5FACD1BBE17}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0B67C46B-9761-4221-925E-A5FACD1BBE17}.Release|x64.ActiveCfg = Release|Any CPU
 		{0B67C46B-9761-4221-925E-A5FACD1BBE17}.Release|x64.Build.0 = Release|Any CPU
-		{C6FC6811-6739-46AA-A83A-3E97CCCE4092}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{C6FC6811-6739-46AA-A83A-3E97CCCE4092}.Debug|x64.ActiveCfg = Debug|x64
-		{C6FC6811-6739-46AA-A83A-3E97CCCE4092}.Debug|x64.Build.0 = Debug|x64
-		{C6FC6811-6739-46AA-A83A-3E97CCCE4092}.Release|Any CPU.ActiveCfg = Release|x64
-		{C6FC6811-6739-46AA-A83A-3E97CCCE4092}.Release|x64.ActiveCfg = Release|x64
-		{C6FC6811-6739-46AA-A83A-3E97CCCE4092}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
