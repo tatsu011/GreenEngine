@@ -49,7 +49,7 @@ namespace Green_Engine.Green
             {
                 severity = logSeverity,
                 Message = string.Format(message, args),
-                Timestamp = DateTime.Now.ToString("HH:MM:SS"),
+                Timestamp = DateTime.Now.ToString("HH:mm:ss"),
                 Sender = "API"
 
             }); 
@@ -81,7 +81,7 @@ namespace Green_Engine.Green
             {
                 severity = logSeverity,
                 Message = string.Format(message, args),
-                Timestamp = DateTime.Now.ToString("HH:MM:SS"),
+                Timestamp = DateTime.Now.ToString("MM-DD-YY::HH:mm:ss"),
                 Sender = "ENGINE"
 
             });
