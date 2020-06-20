@@ -10,7 +10,14 @@ namespace Green_Engine.Green
 {
     public static class Logger
     {
+        /// <summary>
+        /// Global Log timestamp.
+        /// </summary>
+        private static readonly string logTimestampFormat = "MM-dd-yy::HH:mm:ss";
+
         private static BlockingCollection<LogObject> blockingQueue = new BlockingCollection<LogObject>();
+
+        private static List<string> RegisteredLogs;
 
         internal static void Init()
         {
@@ -49,10 +56,33 @@ namespace Green_Engine.Green
             {
                 severity = logSeverity,
                 Message = string.Format(message, args),
-                Timestamp = DateTime.Now.ToString("HH:mm:ss"),
+                Timestamp = DateTime.Now.ToString(logTimestampFormat),
                 Sender = "API"
 
             }); 
+        }
+
+        public static void Log(int LoggerID, string message, Severity logSeverity, params object[] args)
+        {
+            if (LoggerID >= RegisteredLogs.Count)
+                throw new ArgumentException("LoggerID must be attached to a registered logger");
+
+            blockingQueue.Add(new LogObject()
+            {
+                severity = logSeverity,
+                Message = string.Format(message, args),
+                Timestamp = DateTime.Now.ToString(logTimestampFormat),
+                Sender = RegisteredLogs[LoggerID]
+
+            });
+        }
+
+        public static int RegisterLogger(string LogName)
+        {
+            if (LogName == "" || RegisteredLogs.Contains(LogName))
+                throw new ArgumentException("Logger name cannot be a duplicate of another logger, and cannot be an empty string.");
+            RegisteredLogs.Add(LogName);
+            return RegisteredLogs.Count - 1;
         }
 
 
@@ -81,7 +111,7 @@ namespace Green_Engine.Green
             {
                 severity = logSeverity,
                 Message = string.Format(message, args),
-                Timestamp = DateTime.Now.ToString("MM-DD-YY::HH:mm:ss"),
+                Timestamp = DateTime.Now.ToString(logTimestampFormat),
                 Sender = "ENGINE"
 
             });
