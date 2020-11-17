@@ -1,6 +1,0 @@
-[submodule "vendor/Raylibcs"]
-	path = vendor/Raylibcs
-	url = https://github.com/ChrisDill/Raylib-cs
-[submodule "vendor/raylib"]
-	path = vendor/raylib
-	url = https://github.com/raysan5/raylib

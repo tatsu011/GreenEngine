@@ -38,23 +38,26 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Raylib-cs.targets" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Raylib-cs, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Raylib-cs.3.1.5\lib\netstandard2.0\Raylib-cs.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Green\Event.cs" />
     <Compile Include="Green\ImageObject.cs" />
     <Compile Include="Green\RegistryObject.cs" />
     <Compile Include="Green\States.cs" />
+    <Compile Include="Green\Translations.cs" />
     <Compile Include="Green_Application.cs" />
     <Compile Include="Green\Logger.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\vendor\Raylibcs\Raylib-cs\Raylib-cs.csproj">
-      <Project>{c6fc6811-6739-46aa-a83a-3e97ccce4092}</Project>
-      <Name>Raylib-cs</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="raylib.dll">
