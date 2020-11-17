@@ -15,4 +15,16 @@ namespace Green_Engine.Green
             EventTime = DateTime.Now;
         }
     }
+
+    public class KeyboardEventArgs : EventArgs
+    {
+        
+    }
+
+    public class MouseEventArgs : EventArgs
+    {
+        Vector2 ScreenPosition;
+
+
+    }
 }

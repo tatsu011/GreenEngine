@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Green\Event.cs" />
+    <Compile Include="Green\ImageObject.cs" />
+    <Compile Include="Green\RegistryObject.cs" />
+    <Compile Include="Green\States.cs" />
     <Compile Include="Green_Application.cs" />
     <Compile Include="Green\Logger.cs" />
   </ItemGroup>
