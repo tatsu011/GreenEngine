@@ -18,6 +18,7 @@ namespace Sandbox
         {
             Program program = new Program(args);
             Logger.Warn("Yes Sir Carl, I am here.  You don't need to shout.");
+            program.RegisterObject(new ImageObject("Engine/GreenLgo.png", 500, 500));
             program.Run();
 
             
